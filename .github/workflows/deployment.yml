@@ -1,5 +1,5 @@
 name: Deploy Project
-on: push # This will trigger this workflow when any branch pushed to remote
+on: [push, workflow_dispatch] # This will trigger this workflow when any branch pushed to remote
 jobs:
   test:
     runs-on: ubuntu-latest
